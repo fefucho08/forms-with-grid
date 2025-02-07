@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+}
+
+form {
+    background-color: #3849e6;
+    color: #fff;
+    padding: 96px 78px;
+    display: grid;
+    grid-template-columns: 217px 217px;
+    grid-template-rows: repeat(5, auto);
+    column-gap: 17px;
+}
+
+form input:active,
+form input:focus {
+    outline: none;
+}
+
+form input {
+    padding: 12px 15px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+form > h1 {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    text-align: center;
+    font-weight: 700;
+    font-size: 37px;
+}
+
+form > p {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#nameInput {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    margin-bottom: 16px;
+}
+
+#emailInput {
+    grid-column: 2 / -1;
+    grid-row: 3 / 4;
+    margin-bottom: 16px;
+}
+
+#phoneInput {
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;
+}
+
+#submitBtn {
+    width: 127px;
+    margin-top: 57px;
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+    color: rgba(22, 42, 227, 0.85);
+    font-weight: bold;
+    padding: 14px 36px;
+}
