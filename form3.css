@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", "Lucida Sans", "Lucida Sans Regular",
+        "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #dcdcdc;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    background-color: #fff;
+    border-radius: 10px;
+    display: grid;
+    padding: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "title title"
+        "paragraph paragraph"
+        ". ."
+        ". ."
+        ". ."
+        "nameLabel dateLabel"
+        "nameInput dateInput"
+        ". ."
+        "emailLabel messageLabel"
+        "emailInput messageArea"
+        ". messageArea"
+        "phoneLabel messageArea"
+        "phoneInput messageArea"
+        ". ."
+        ". ."
+        ". ."
+        ". submitBtn";
+    row-gap: 10px;
+    column-gap: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+form > h1 {
+    font-size: 32px;
+    font-weight: 700;
+    grid-area: title;
+}
+
+form > p {
+    font-size: 16px;
+    font-weight: 500;
+    grid-area: paragraph;
+}
+
+form label {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+form > input,
+form > select,
+form > textarea,
+form .phoneContainer {
+    background-color: #f6f9ff;
+    font-size: 17px;
+    font-weight: 500;
+    border: 1px solid #eef4ff;
+    border-radius: 5px;
+    padding: 12px;
+    resize: none;
+}
+
+form input:active,
+form input:focus,
+form textarea:active,
+form textarea:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #c8c8c8;
+}
+
+#nameLabel {
+    grid-area: nameLabel;
+}
+
+#nameInput {
+    grid-area: nameInput;
+}
+
+#dateLabel {
+    grid-area: dateLabel;
+}
+
+#dateInput {
+    grid-area: dateInput;
+}
+
+#emailLabel {
+    grid-area: emailLabel;
+}
+
+#emailInput {
+    grid-area: emailInput;
+}
+
+#messageLabel {
+    grid-area: messageLabel;
+}
+
+#messageArea {
+    grid-area: messageArea;
+}
+
+#phoneLabel {
+    grid-area: phoneLabel;
+}
+
+.phoneContainer {
+    grid-area: phoneInput;
+}
+
+.phoneContainer select,
+.phoneContainer input {
+    border: none;
+    background-color: transparent;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+#submitBtn {
+    grid-area: submitBtn;
+    width: 154px;
+    padding: 10px 20px;
+    background-color: #3b82f6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    justify-self: end;
+    text-align: center;
+    font-size: 16px;
+}
+
+#submitBtn i {
+    margin-left: 15px;
+}

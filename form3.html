@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./form3.css" />
+        <title>Document</title>
+
+        <!-- FONT AWESOME IMPORT -->
+        <script
+            src="https://kit.fontawesome.com/60832ed020.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <form action="">
+            <h1>Book your appointment now</h1>
+            <p>So our team can reach out to you on time</p>
+            <label for="nameInput" id="nameLabel">Full Name</label>
+            <input
+                type="text"
+                name="name"
+                id="nameInput"
+                placeholder="eg: John Doe"
+            />
+            <label for="emailInput" id="emailLabel">Email</label>
+            <input
+                type="email"
+                name="email"
+                id="emailInput"
+                placeholder="eg: john@email.com"
+            />
+            <label for="phoneInput" id="phoneLabel">Phone Number</label>
+            <div class="phoneContainer">
+                <select name="phoneCode" id="codeInput">
+                    <option value="971" selected>+971</option>
+                </select>
+                <input
+                    type="tel"
+                    name="phone"
+                    id="phoneInput"
+                    placeholder="543120987"
+                    pattern="/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/"
+                />
+            </div>
+            <label for="dateInput" id="dateLabel">Available Date</label>
+            <select name="date" id="dateInput">
+                <option value="default" selected>Select</option>
+            </select>
+            <label for="messageArea" id="messageLabel"
+                >Share Your Message</label
+            >
+            <textarea name="message" id="messageArea">Message</textarea>
+            <button type="submit" id="submitBtn">
+                Book Now <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </form>
+    </body>
+</html>
