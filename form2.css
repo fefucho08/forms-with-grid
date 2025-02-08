@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #aed3cf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+form {
+    background-color: #f2ede6;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 275px 200px 0 136px;
+    grid-template-rows: repeat(5, auto);
+    column-gap: 76px;
+    padding: 60px 75px;
+    font-family: "Montserrat", "Lucida Sans", "Lucida Sans Regular",
+        "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+form img {
+    width: 275px;
+    height: 420px;
+    object-fit: cover;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+}
+
+form > h1 {
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+    font-size: 56px;
+    font-family: "Playfair Display", "Times New Roman", Times, serif;
+    font-weight: 400;
+    color: #00054b;
+}
+
+form input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #00024b;
+    font-size: 16px;
+    padding-bottom: 10px;
+    height: 39px;
+    font-family: "Montserrat", "Lucida Sans", "Lucida Sans Regular",
+        "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    box-sizing: content-box;
+}
+
+form input:active,
+form input:focus {
+    outline: none;
+}
+
+#nameInput {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+#emailInput {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+
+#messageInput {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+}
+
+#submitBtn {
+    grid-row: 5 / 6;
+    grid-column: 2 / 3;
+    width: 187px;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 12px 60px;
+    border: none;
+    background-color: #00054b;
+    height: 38px;
+    color: #fff;
+    border-radius: 24px;
+    font-family: "Montserrat", "Lucida Sans", "Lucida Sans Regular",
+        "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.infoContainer {
+    color: #00054b;
+    height: fit-content;
+}
+
+.infoContainer h2,
+.infoContainer p {
+    font-size: 16px;
+}
+
+#contact {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+}
+
+#based {
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+}
+
+.socialContainer {
+    grid-column: 4 / 5;
+    grid-row: 5 / 6;
+    color: #00054b;
+    font-size: 24px;
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 32px;
+}
