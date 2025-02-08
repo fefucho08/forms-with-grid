@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./form4.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="">
+            <h1>Job Application ( Web )</h1>
+            <label for="firstNameInput" id="firstNameLabel">First Name</label>
+            <input
+                type="text"
+                name="firstName"
+                id="firstNameInput"
+                placeholder="Enter First Name......."
+            />
+            <label for="lastNameInput" id="lastNameLabel">Last Name</label>
+            <input
+                type="text"
+                name="lastName"
+                id="lastNameInput"
+                placeholder="Enter Last Name......."
+            />
+            <label for="emailInput" id="emailLabel">Email</label>
+            <input
+                type="email"
+                name="email"
+                id="emailInput"
+                placeholder="Enter Email......."
+            />
+            <label for="roleSelect" id="roleLabel">Job Role</label>
+            <select name="jobRole" id="roleSelect">
+                <option value="backend" selected>Backend Developer</option>
+                <option value="frontend">Frontend Developer</option>
+                <option value="fullstack">Fullstack Developer</option>
+            </select>
+            <label for="addressArea" id="addressLabel">Enter Address</label>
+            <textarea name="address" id="addressArea"></textarea>
+            <label for="cityInput" id="cityLabel">City</label>
+            <input
+                type="text"
+                name="city"
+                id="cityInput"
+                placeholder="Enter City......."
+            />
+            <label for="pincodeInput" id="pincodeLabel">Pincode</label>
+            <input
+                type="text"
+                name="pincode"
+                id="pincodeInput"
+                placeholder="Enter Pincode......."
+            />
+            <label for="dateInput" id="dateLabel">Start Date</label>
+            <input
+                type="date"
+                name="startDate"
+                id="dateInput"
+                value="2021-12-30"
+            />
+            <label for="cvInput" id="cvLabel">Upload Your CV</label>
+            <input type="file" name="cv" id="cvInput" />
+            <button type="submit" id="submitBtn">Apply Now</button>
+        </form>
+    </body>
+</html>
